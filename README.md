@@ -2,13 +2,45 @@
 
 This project demonstrates how to create an AWS Lambda function using Go to retrieve dummy weather information and current time. The Lambda function is triggered by an API Gateway endpoint and returns the weather details along with the current timestamp.
 
-## Prerequisites
+# Functionality
 
-Before getting started, make sure you have the following:
+The Lambda function performs the following tasks:
+
+- Receives a GET request from an API Gateway endpoint.
+- Retrieves dummy weather information (in this example, it is hardcoded as "Sunny").
+- Retrieves the current timestamp.
+- Constructs a JSON response containing the weather information and timestamp.
+- Returns the response to the API Gateway, which is then sent back to the client.
+
+# Repository Structure
+
+The repository has the following structure:
+
+- `main.go`: Contains the Go source code for the Lambda function.
+- `deployment.zip`: A ZIP file containing the compiled Go binary and its dependencies for deployment to AWS Lambda.
+- `README.md`: Provides instructions on how to set up and deploy the Lambda function.
+
+# Prerequisites
+
+To set up and deploy the Lambda function locally, you need the following prerequisites:
 
 - Go installed and properly configured on your local machine.
 - An AWS account.
 - The AWS CLI installed and configured on your local machine.
+
+# Deployment
+
+The deployment process involves the following steps:
+
+1. Clone the repository.
+2. Write the Lambda function code.
+3. Build the Go binary.
+4. Package the code into a ZIP file.
+5. Create an AWS Lambda function.
+6. Upload the code to the Lambda function.
+7. Set up an API Gateway trigger for the Lambda function.
+8. Deploy the API.
+9. Test the Lambda function and API endpoint.
 
 ## Getting Started
 
